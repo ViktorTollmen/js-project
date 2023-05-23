@@ -7,17 +7,17 @@
     margin-bottom: 1vw;
 }
 
-/* Visibility: hidden; för att den ska starta gömd, font-size: 2vw; så den är responsiv */
+/* display: none; för att den ska starta gömd, font-size: 2vw; så den är responsiv */
 #vibes
 {
-    visibility: hidden;
+    display: none;
     font-size: 2vw;
 }
 
-/* Visibility: hidden; för att den ska starta gömd, font-size: 2vw; så den är responsiv */
+/* display: none; för att den ska starta gömd, font-size: 2vw; så den är responsiv */
 #time
 {
-    visibility: hidden;
+    display: none;
     font-size: 1.25vw;
 }
 

@@ -32,17 +32,17 @@ function change_bg()
 function good_vibes()
 {
     // För att korta ner. 
-    let vibes = document.getElementById("vibes").style.visibility;
+    let vibes = document.getElementById("vibes").style.display;
 
-    // Ifall viber är lika med ingenting (för den börjar på det) eller är lika med hidden ändrar den visibility. 
-    if(vibes == "" || vibes == "hidden")
+    // Ifall viber är lika med ingenting (för den börjar på det) eller är lika med none ändrar den display. 
+    if(vibes == "" || vibes == "none")
     {
         // .getElementById för att att få objektet genom Id. 
-        document.getElementById("vibes").style.visibility = "visible";
+        document.getElementById("vibes").style.display = "block";
     }
     else
     {
-        document.getElementById("vibes").style.visibility = "hidden";
+        document.getElementById("vibes").style.display = "none";
     }
 }
 
@@ -56,16 +56,16 @@ function time()
     document.getElementById("time").innerHTML = date;
 
     // För att korta ner. 
-    let time_visibility = document.getElementById("time").style.visibility;
+    let time_display = document.getElementById("time").style.display;
 
     // För att ändra synlighet. 
-    if(time_visibility == "hidden" || time_visibility == "")
+    if(time_display == "none" || time_display == "")
     {
-        document.getElementById("time").style.visibility = "visible"
+        document.getElementById("time").style.display = "block"
     }
     else
     {
-        document.getElementById("time").style.visibility = "hidden"
+        document.getElementById("time").style.display = "none"
     }
 }
 
@@ -105,15 +105,15 @@ function change_picture()
 // Funktion för "Hide picture" knappen. 
 function hide_picture()
 {
-    // Ändrar visibility
-    document.getElementById("image").style.visibility = "hidden";
+    // Ändrar display
+    document.getElementById("image").style.display = "none";
 }
 
 // Funktion för "Show picture" knappen.
 function show_picture()
 {
-    // Ändrar visibility
-    document.getElementById("image").style.visibility = "visible";
+    // Ändrar display
+    document.getElementById("image").style.display = "block";
 }
 
 // Funktion för "Header" knappen.
@@ -125,12 +125,12 @@ function header()
     document.getElementById("header").style.backgroundColor = "gray";
     // Ändrar position till center
     document.getElementById("header").style.alignItems = "center";
-    // Ändrar visibility
-    document.getElementById("vibes").style.visibility = "visible";
+    // Ändrar display
+    document.getElementById("vibes").style.display = "block";
     // Ändrar färgen på texten
     document.getElementById("vibes").style.color = "white";
-    // Ändrar visibility
-    document.getElementById("time").style.visibility = "visible";
+    // Ändrar display
+    document.getElementById("time").style.display = "block";
     // Ändrar Datumet/tiden till den nuvarande
     document.getElementById("time").innerHTML = Date();
     // Ändrar färg på texten
@@ -142,21 +142,21 @@ function header()
 // Funktion för "Remove Header" knappen.
 function remove_header()
 {
-    // Ändrar allt till visibility = hidden
-    document.getElementById("header").style.visibility = "hidden";
-    document.getElementById("vibes").style.visibility = "hidden";
-    document.getElementById("time").style.visibility = "hidden";
-    document.getElementById("image").style.visibility = "hidden";
+    // Ändrar allt till display = none
+    document.getElementById("header").style.display = "none";
+    document.getElementById("vibes").style.display = "none";
+    document.getElementById("time").style.display = "none";
+    document.getElementById("image").style.display = "none";
 }
 
 // Funktion för "Show header" knappen.
 function show_header()
 {
-    // Ändrar allt till visibility = visible
-    document.getElementById("header").style.visibility = "visible";
-    document.getElementById("vibes").style.visibility = "visible";
-    document.getElementById("time").style.visibility = "visible";
-    document.getElementById("image").style.visibility = "visible";
+    // Ändrar allt till display = block
+    document.getElementById("header").style.display = "flex";
+    document.getElementById("vibes").style.display = "block";
+    document.getElementById("time").style.display = "block";
+    document.getElementById("image").style.display = "block";
     // Lägger till en text längst ner på sidan. 
     document.getElementById("thanks").innerHTML = "Thank you for visiting my website"
 }
