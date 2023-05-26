@@ -49,11 +49,8 @@ function good_vibes()
 // Funktion för "Time" knappen. 
 function time()
 {
-    // Ger en variabel värdet Date() vilket är inbyggt i Js och kollar på din dators tid. 
-    let date = Date();
-    
-    // Ändrar innehållet i h3 taggen med id "time" till datumet. 
-    document.getElementById("time").innerHTML = date;
+    // Ändrar innehållet i h3 taggen med id "time" till datumet via Date() vilket är inbyggt i Js och kollar på din dators tid. 
+    document.getElementById("time").innerHTML = Date();;
 
     // För att korta ner. 
     let time_display = document.getElementById("time").style.display;
@@ -144,9 +141,6 @@ function remove_header()
 {
     // Ändrar allt till display = none
     document.getElementById("header").style.display = "none";
-    document.getElementById("vibes").style.display = "none";
-    document.getElementById("time").style.display = "none";
-    document.getElementById("image").style.display = "none";
 }
 
 // Funktion för "Show header" knappen.
@@ -160,4 +154,3 @@ function show_header()
     // Lägger till en text längst ner på sidan. 
     document.getElementById("thanks").innerHTML = "Thank you for visiting my website"
 }
-
